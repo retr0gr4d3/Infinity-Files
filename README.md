@@ -18,14 +18,29 @@ imports it into your saved skillsets — both exactly as if you'd imported them 
 **One file per quest chain.** The file name (without `.json`) is just for the Library list; the
 chain name comes from the top-level key. To add a new chain, drop a new `<Name>.json` in `Scripts/`.
 
+A chain may optionally declare a recommended **class** (a saved skillset name). Use the object form:
+
 ```json
 {
-  "Lair": [
-    { "qid": 19, "area": "lair", "frame": "Enter", "pad": "Spawn", "items": 1 },
-    { "qid": 20, "area": "lair", "frame": "r2",    "pad": "Spawn", "items": 1 }
-  ]
+  "Lair": {
+    "class": "Generic",
+    "entries": [
+      { "qid": 19, "area": "lair", "frame": "Enter", "pad": "Spawn", "items": 1 },
+      { "qid": 20, "area": "lair", "frame": "r2",    "pad": "Spawn", "items": 1 }
+    ]
+  }
 }
 ```
+
+The legacy bare-array form (no class) still works:
+
+```json
+{ "Lair": [ { "qid": 19, "area": "lair", "frame": "Enter", "pad": "Spawn", "items": 1 } ] }
+```
+
+When the script is loaded, the chain tab's **Class / Skillset** picker defaults to the declared
+`class` (the user can override it per run, or leave it "(none)" to fight with the current skillset).
+The class should match an autoskill in `Autoskills/autoskills.txt` so the user can load it too.
 
 Per entry:
 
