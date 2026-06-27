@@ -3,7 +3,7 @@
 Community content for **Beyond** (the Infinity client). Two kinds of content live here:
 
 - **Scripts** — quest chains for the Quest Runner / Automation.
-- **Autoskills** — saved skillset rotations for the Autoskills (Retro) engine.
+- **Autoskills** — saved skillset rotations for the Autoskills engine.
 
 Beyond pulls this repo from inside the client: open the **Library** window and click
 **Update Library**. The contents are downloaded into
