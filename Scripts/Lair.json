@@ -1,0 +1,6 @@
+{
+  "Lair": [
+    { "qid": 19, "area": "lair", "frame": "Enter", "pad": "Spawn", "items": 1, "_note": "Kill 2 water draconians at Enter/Spawn" },
+    { "qid": 20, "area": "lair", "frame": "r2",    "pad": "Spawn", "items": 1, "_note": "Kill 5 wyverns in room 2 — confirm qid before relying on" }
+  ]
+}

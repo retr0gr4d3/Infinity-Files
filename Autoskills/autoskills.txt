@@ -1,0 +1,10 @@
+# Beyond autoskill setups — one entry per line.
+# Format: Name|Combo|Delays(ms)|Waits|Frees   (matches the Autoskills import/export tool)
+#   Name   = display/class name (first field; used by the Library window)
+#   Combo  = skill slots to cycle, e.g. 1,2,3,4,5
+#   Delays = per-skill delay in ms (5 values)
+#   Waits  = per-skill "wait for the skill to land before continuing" flags (5 booleans)
+#   Frees  = per-skill "free cast / ignore global cooldown" flags (5 booleans)
+# Blank lines and lines starting with # or // are ignored, so this header is safe to keep.
+Generic|1,2,3,4,5|1000,1000,1000,1000,1000|False,False,False,False,False|False,False,False,False,False
+Spam|1,2,3,4,5|300,300,300,300,300|False,False,False,False,False|False,False,False,False,False
